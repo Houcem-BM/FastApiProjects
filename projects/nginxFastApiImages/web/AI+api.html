@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Prediction</title>
+    <link rel="stylesheet" href="AI+api.css">
+</head>
+<body>
+    <h2>Student Grade Prediction</h2>
+    <form id="predictionForm">
+        <label for="age">Age (15-18):</label>
+        <input type="number" id="age" name="Age" min="15" max="18" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="Gender">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select>
+        
+        <label for="ethnicity">Ethnicity:</label>
+        <select id="ethnicity" name="Ethnicity">
+            <option value="0">Caucasian</option>
+            <option value="1">African American</option>
+            <option value="2">Asian</option>
+            <option value="3">Other</option>
+        </select>
+        
+        <label for="parentaleducation">Parental Education:</label>
+        <select id="parentaleducation" name="ParentalEducation">
+            <option value="0">None</option>
+            <option value="1">High School</option>
+            <option value="2">Some College</option>
+            <option value="3">Bachelor's</option>
+            <option value="4">Higher</option>
+        </select>
+        
+        <label for="studytime">Study Time Weekly (0-20 hours):</label>
+        <input type="number" id="studytime" name="StudyTimeWeekly" min="0" max="20" step="0.1" required>
+        
+        <label for="absences">Absences (0-30):</label>
+        <input type="number" id="absences" name="Absences" min="0" max="30" required>
+        
+        <label for="tutoring">Tutoring:</label>
+        <select id="tutoring" name="Tutoring">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        
+        <label for="parentalsupport">Parental Support:</label>
+        <select id="parentalsupport" name="ParentalSupport">
+            <option value="0">None</option>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+            <option value="4">Very High</option>
+        </select>
+        
+        <label for="extracurricular">Extracurricular:</label>
+        <select id="extracurricular" name="Extracurricular">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        
+        <label for="sports">Sports:</label>
+        <select id="sports" name="Sports">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        
+        <label for="music">Music:</label>
+        <select id="music" name="Music">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        
+        <label for="volunteering">Volunteering:</label>
+        <select id="volunteering" name="Volunteering">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        
+        <label for="gpa">GPA:</label>
+        <input type="number" id="gpa" name="GPA" min="0" max="20" step="0.1" required>
+        
+        <button type="submit">Predict</button>
+    </form>
+    <div class="result" id="result"></div>
+
+    <script src="AI+api.js"></script>
+</body>
+</html>

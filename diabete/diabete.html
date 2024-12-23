@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج التنبؤ بمرض السكري</title>
+    <link rel="stylesheet" href="diabete.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>نموذج التنبؤ بمرض السكري</h1>
+        <form id="predictForm">
+            <input type="number" id="Pregnancies" name="Pregnancies" placeholder="عدد مرات الحمل" required>
+            <input type="number" id="Glucose" name="Glucose" placeholder="مستوى سكر الدم" required>
+            <input type="number" id="BloodPressure" name="BloodPressure" placeholder="ضغط الدم" required>
+            <input type="number" id="SkinThickness" name="SkinThickness" placeholder="سمك الجلد" required>
+            <input type="number" id="Insulin" name="Insulin" placeholder="الأنسولين" required>
+            <input type="number" id="BMI" name="BMI" placeholder="مؤشر الكتلة" min="0" max="50" step="0.001" required>
+            <input type="number" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" min="0" max="2" step="0.0001"placeholder="تاريخ عائلي لمرض السكري" required>
+            <input type="number" id="Age" name="Age" placeholder="السن" required>
+            <button type="submit">تنبأ</button>
+        </form>
+        <div id="result"></div>
+        
+    </div>
+
+    <script src="diabete.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة مؤشر كتلة الجسم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fastApi.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حاسبة مؤشر كتلة الجسم</h1>
+        <input type="number" id="weight" placeholder="الوزن (كجم)" min="20" max="200">
+        <input type="number" id="height" placeholder="الطول (متر)" step="0.01" min="1" max="3">
+        <button onclick="calculateBMI()">احسب مؤشر كتلة الجسم</button>
+        <div class="result" id="result"></div>
+        
+        <div class="info">
+            <h2>ما هو مؤشر كتلة الجسم؟</h2>
+            <p>مؤشر كتلة الجسم (BMI) هو مقياس يستخدم لتقدير ما إذا كان الشخص يتمتع بوزن صحي بالنسبة لطوله. يساعد هذا المؤشر في تقييم مخاطر الإصابة بأمراض معينة مرتبطة بالوزن.</p>
+            <h2>كيفية تفسير النتائج:</h2>
+            <ul>
+                <li>أقل من 18.5: نقص في الوزن</li>
+                <li>18.5 - 24.9: وزن صحي</li>
+                <li>25 - 29.9: زيادة في الوزن</li>
+                <li>30 فما فوق: سمنة</li>
+            </ul>
+            <p>تذكر أن مؤشر كتلة الجسم هو دليل عام فقط. استشر طبيبك للحصول على تقييم صحي شامل.</p>
+        </div>
+    </div>
+
+<script src="fastApi.js"></script>
+        
+</body>
+</html>

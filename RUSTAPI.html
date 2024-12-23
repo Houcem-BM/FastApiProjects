@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management</title>
+  <link rel="stylesheet" href="RUSTAPI.css">
+</head>
+<body>
+  <button id="log_out" onclick="reloadFunc()">Log out</button>
+  <h1>Student Management</h1>
+  
+  <form id="checkUser">
+    <input type="text" id="username" placeholder="User Name">
+    <input type="password" id="password" placeholder="Password">
+    <button id="submit"> Log in</button>
+  </form>
+<div id="content">
+     <!-- Section to display students -->
+  <h2>Student List</h2>
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Grade</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dynamic content goes here -->
+    </tbody>
+  </table>
+
+  <!-- Form to add a new student -->
+  <h2>Add Student</h2>
+  <form id="addStudentForm">
+    <input type="text" id="studentName" placeholder="Name" required />
+    <input type="number" id="studentGrade" placeholder="Grade" required />
+    <button type="submit">Add Student</button>
+  </form>
+
+  <!-- Form to update a student -->
+<div class="updateStudentForm">
+    <h2 >Update Student</h2>
+    <form id="updateStudentForm">
+      <input type="number" id="updateId" placeholder="ID" required />
+      <input type="text" id="updateName" placeholder="Name" required />
+      <input type="number" id="updateGrade" placeholder="Grade" required />
+      <button id="update2" type="submit">Update Student</button>
+    </form>
+</div>
+</div>
+ 
+  <script src="RUSTAPI.js"></script>
+</body>
+</html>
